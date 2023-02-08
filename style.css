@@ -1,0 +1,117 @@
+:root {
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
+}
+* {
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.offcanvas {
+  background: var(--veryDarkBlue);
+  opacity: 0.9;
+}
+
+.main-content {
+  position: relative;
+}
+.bg {
+  background: var(--softBlue);
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  left: 20%;
+  bottom: 0;
+  border-radius: 100px 0 00px 100px;
+}
+.main-heading {
+  color: var(--veryDarkBlue);
+}
+.main-paragraph {
+  color: var(--grayishBlue);
+  font-size: 20px;
+}
+.btn-primary {
+  background-color: var(--softBlue);
+  border: 2px solid var(--softBlue) !important;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--softBlue);
+}
+.main-btns {
+  padding: 12px 10px;
+}
+.bg-2 {
+  background: var(--softBlue);
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  left: -10%;
+  bottom: -10%;
+  border-radius: 000px 100px 100px 00px;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.slide-1 {
+  position: relative;
+  overflow: visible;
+}
+.carousel-indicators-top h4 {
+  cursor: pointer;
+  font-weight: normal;
+  color: var(--grayishBlue);
+}
+.news-letter {
+  background: var(--softBlue);
+
+  width: 100vw;
+
+  margin-left: 0;
+  z-index: -3;
+}
+.joined {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.btn-danger {
+  background: var(--softRed);
+}
+.footer {
+  background: var(--veryDarkBlue);
+
+  width: 100vw;
+  margin-left: 0;
+
+  z-index: 1;
+}
+@media screen and (max-width: 786px) {
+  .nav-link {
+    color: white;
+  }
+  .nav-item {
+    border-bottom: 1px solid grey;
+  }
+  .main {
+    overflow-x: hidden;
+  }
+  .main-btns {
+    padding: 8px 8px;
+  }
+}
